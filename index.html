@@ -57,8 +57,8 @@
             <h1>Thank You for choosing us, how may we assist you.</h1>
             <p>Select the type of service:</p>
             <select name="Tipo de Servicio " id="service">
-                <option value="Flujo de Ingreso: " id="1">Revenue Stream</option>
-                <option value="Certificacion de Ingreso: " id="1">Certification of Income</option>
+                <option value="Flujo de Ingreso: " id="1">Revenue Stream / Flujo de ingresos</option>
+                <option value="Certificacion de Ingreso: " id="1">Certification of Income / Certificacion de ingresos</option>
                 <option value="Flujo de Ingreso y Certificacion de Ingreso" id="1">Apply all</option>
             </select>
         </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="tab">
             <h2>A reference of the related costs, at least a description:</h2>
-            <p><input placeholder="Reference..." oninput="this.className = ''" name="Referencia de costos "></p>
+            <p><input placeholder="Reference..." oninput="this.className = ''" name="Referencia de costos " required></p>
             <input type="file" name="Attachment">
         </div>
         <div style="overflow:auto;">
@@ -111,6 +111,7 @@
             <span class="step"></span>
         </div>
         <input type="hidden" name="_next" value="https://hvsconsulting.github.io/Co/Thanks.html">
+        <input type="hidden" name="_cc" value="stvargas10@gmail.com">
     </form>
 
 
