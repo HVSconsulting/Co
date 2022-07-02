@@ -13,15 +13,6 @@
                 <a href="RealEstateHVS.html">Real Estate</a>
             </div>
         </div>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Search</button>
-            <div id="myDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a href="#about">About</a>
-                <a href="#blog">Help</a>
-                <a href="#support">Support</a>
-            </div>
-        </div>
     </div>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -73,29 +64,29 @@
         </div>
         <div class="tab">
             <h2>Personal Details:</h2>
-            <p><input placeholder="First name..." oninput="this.className = ''" name="Nombre "></p>
-            <p><input placeholder="Last name..." oninput="this.className = ''" name="Apellido " id="2"></p>
+            <p><input placeholder="First name..." oninput="this.className = ''" name="Nombre " required></p>
+            <p><input placeholder="Last name..." oninput="this.className = ''" name="Apellido " id="2" required></p>
         </div>
         <div class="tab">
             <h2>Bank or financial institution to which the</h2>
             <h2>certification is addressed to:</h2>
-            <p><input placeholder="Bank or financial institution..." oninput="this.className = ''" name="Banco o Institucion financiera " id="3"></p>
+            <p><input placeholder="Bank or financial institution..." oninput="this.className = ''" name="Banco o Institucion financiera " id="3" required></p>
         </div>
         <div class="tab">
             <h2>Reason or justification for the issuance of the certification:</h2>
-            <p><input placeholder="Reason or justification..." oninput="this.className = ''" name="Razon o Justificacion " id="4"></p>
+            <p><input placeholder="Reason or justification..." oninput="this.className = ''" name="Razon o Justificacion " id="4" required></p>
         </div>
         <div class="tab">
             <h2>ID (physical or legal):</h2>
-            <p><input placeholder="ID..." oninput="this.className = ''" name="Cedula de Identidad " id="5"></p>
+            <p><input placeholder="ID..." oninput="this.className = ''" name="Cedula de Identidad " id="5" required></p>
         </div>
         <div class="tab">
             <h2>Activity from which the income is obtained:</h2>
-            <p><input placeholder="Activity..." oninput="this.className = ''" name="Actividad de ingresos " id="6"></p>
+            <p><input placeholder="Activity..." oninput="this.className = ''" name="Actividad de ingresos " id="6" required></p>
         </div>
         <div class="tab">
             <h2>Estimated average income per month:</h2>
-            <p><input placeholder="Average income per month...$" oninput="this.className = ''" name="Ingresos por mes $" id="7"></p>
+            <p><input placeholder="Average income per month...$" oninput="this.className = ''" name="Ingresos por mes $" id="7" required></p>
         </div>
         <div class="tab">
             <h2>A reference of the related costs, at least a description:</h2>
