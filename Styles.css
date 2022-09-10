@@ -1,5 +1,8 @@
 /*Form*/
 
+html {
+    overflow-x: hidden;
+}
 
 /* Style the form */
 
