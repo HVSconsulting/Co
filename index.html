@@ -50,16 +50,33 @@
 <!------------------------------------------------------- Table ------------------------------------------->
 
 <body>
-    <form id="regForm" action="https://formsubmit.co/hvsconsulting@hotmail.com" method="POST" enctype=multipart/form-data>
+    <form id="regForm" action="https://formsubmit.co/stvargas10@gmail.com" method="POST" enctype=multipart/form-data>
         <br>
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
             <h1>Gracias por elegirnos, en qué podemos ayudarle.</h1>
             <p>Seleccione el tipo de servicio:</p>
-            <select name="Tipo de Servicio " id="TipoDeServicio">
+            <select name="Tipo de Servicio " id="TipoDeServicio" onchange="contaMensual(this)">
                 <option value="Flujo de Caja: " id="1">Flujo de Caja</option>
                 <option value="Certificacion de Ingreso: " id="1">Certificacion de ingresos</option>
+                <option value="Contabilidad Mensual" id="3">Contabilidad Mensual</option>
             </select>
+            <select id="step2" hidden disabled>
+                <option value="Persona Fisica">Persona Fisica</option>
+                <option value="Persona Juridica">Persona Juridica</option>
+            </select>
+            <Script>
+                function contaMensual(TipoDeServicio){
+                    console.log(TipoDeServicio.value)
+                    if(TipoDeServicio.value == "Contabilidad Mensual"){
+                        document.getElementById("step2").disabled = false;
+                        document.getElementById("step2").hidden = false;
+                    }else{
+                        document.getElementById("step2").disabled = true;
+                        document.getElementById("step2").hidden = true;
+                    }
+                };
+            </Script>
         </div>
         <div class="tab">
             <h2>Datos personales:</h2>
